@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stack, Button } from '@chakra-ui/react';
+import { Stack, Button, Heading } from '@chakra-ui/react';
 import { auth, provider } from '../firebase-config.js';
 import { signInWithPopup } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
@@ -20,6 +20,7 @@ function Login({ setAuth }) {
         justifyContent={'center'}
         height={'90vh'}
       >
+        <Heading>Log In using Google Account !</Heading>
         <Button colorScheme={'blue'} onClick={handleSignIn}>
           Sign In With Google
         </Button>

@@ -70,10 +70,10 @@ function Timex() {
             <Heading as="h1" size="xl" noOfLines={1}>
               Break
             </Heading>
-            <Text color="white">
+            <Heading size={'lg'} color="white">
               {breakmin > 10 ? '0' + breakmin : breakmin}:
               {breaksec > 10 ? '0' + breaksec : breaksec}
-            </Text>
+            </Heading>
           </>
         ) : (
           <Stack
@@ -83,16 +83,16 @@ function Timex() {
             backgroundColor={'black'}
             height="40vh"
             width={'40vw'}
-            marginTop={'40vh'}
+            marginTop={'30vh'}
             flexDirection="column"
           >
             <Heading as="h1" size="xl" noOfLines={1} color={'white'}>
               Focus
             </Heading>
-            <Text color={'white'} variant={''}>
+            <Heading size={'lg'} color={'white'} variant={''}>
               {minutes < 10 && start ? '0' + minutes : minutes}:{' '}
               {second < 10 && start ? '0' + second : second}
-            </Text>
+            </Heading>
             <Stack
               display={'flex'}
               alignItems={'center'}

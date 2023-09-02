@@ -16,8 +16,6 @@ const PrivateRoute = ({auth,...props}) => {
 }
 function App() {
   const [auth, setAuth] = useState(false)
-  console.log(auth.displayName)
-  console.log(auth)
   return (
     <ChakraProvider theme={theme}>
       <Routes>
